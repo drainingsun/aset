@@ -1,0 +1,38 @@
+{
+    "name": "aset",
+    "version": "0.1.0",
+    "description": "Scalable Redis Sorted Sets",
+    "main": "libs",
+    "scripts": {
+        "lint": "eslint ./ || true",
+        "test": "NODE_ENV=testing mocha --timeout 5000 --exit tests"
+    },
+    "keywords": [
+        "redis",
+        "sets",
+        "scale",
+        "queue",
+        "fifo"
+    ],
+    "author": "Draining Sun",
+    "license": "MIT",
+    "dependencies": {
+        "ared": "0.2.2",
+        "async": "2.6.0",
+        "murmurhash-native": "3.2.1",
+        "redis": "2.8.0"
+    },
+    "devDependencies": {
+        "eslint": "4.14.0",
+        "mocha": "4.1.0",
+        "should": "13.2.0",
+        "supertest": "3.0.0"
+    },
+    "engines": {
+        "node": ">=6"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drainingsun/aset.git"
+    }
+}
